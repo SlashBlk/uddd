@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#2bbd6f"
+        android:paddingTop="75dp">
+
+        <TextView
+            android:id="@+id/txtTenLoaiDiaDanh"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Địa danh"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding = "false"
+        android:id="@+id/lstDiaDanh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="200dp"
+        android:scrollbars="vertical" />
+</RelativeLayout>

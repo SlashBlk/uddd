@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform
+        </item>
+    </style>
+
+    <style name="DuLich" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#148742</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#000000</item>
+
+
+    </style>
+
+    <style name="CaMau" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="button">
+        <item name="android:buttonCornerRadius">20dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+
+    <style name="facebook_button" parent="button">
+        <item name="android:background">@drawable/rounded_button_facebook</item>
+    </style>
+
+    <style name="google_button" parent="button">
+        <item name="android:background">@drawable/rounded_button_google</item>
+    </style>
+
+    <style name="smartphone_button" parent="button">
+        <item name="android:background">@drawable/rounded_button_smartphone</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="WithTransiTion" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="customRatingBar">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "89781137327",
+    "firebase_url": "https://uddd-2d4ef.firebaseio.com",
+    "project_id": "uddd-2d4ef",
+    "storage_bucket": "uddd-2d4ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89781137327:android:5eaada9e6b8083b773495a",
+        "android_client_info": {
+          "package_name": "nhi.uddd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89781137327-4appmntqda5mb7l8cu13ms6shtsgs56s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY-nIYwq8hUeiWsJFjG18wpRnogYy97ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89781137327-4appmntqda5mb7l8cu13ms6shtsgs56s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

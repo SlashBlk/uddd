@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DiaDanhComment.DiaDanhCommentActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstComment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/inputCommentContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/inputCommentContainer"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lstComment">
+
+        <EditText
+            android:id="@+id/inputNoiDungComment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/white"
+            android:hint="Bình luận..."
+            android:padding="10dp">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="@color/cardview_dark_background">
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/btnAttachImage"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_attach_file_primary_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btnSendComment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </ImageButton>
+
+            <ImageButton
+                android:onClick="themComment"
+                android:id="@+id/btnSendComment"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/ic_send_primary_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

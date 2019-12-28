@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgHinhAnhNguoiDung"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtTenNguoiDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Xuân Nhị">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtNgayTao"
+                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3d"></TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtNoiDung"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sed augue dapibus, posuere eros ndimentum, nec pretium enim tempus. Suspendisse vita."></TextView>
+    </LinearLayout>
+</LinearLayout>

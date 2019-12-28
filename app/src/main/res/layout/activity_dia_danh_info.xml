@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.DiaDanhInfo.DiaDanhInfoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgHinhAnhDiaDanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dia_diem"
+        android:transitionName="imageMain"
+        android:minHeight="500dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="diaDanhInfoTrans"
+        android:minHeight="400dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTenDiaDanh"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Tượng đài Cà Mau">
+            </TextView>
+            <TextView
+                android:id="@+id/txtMoTa"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="Mô tả">
+            </TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <ImageButton
+        android:onClick="chuyenTrangComment"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment_primary_24dp"
+        android:backgroundTint="@android:color/transparent"></ImageButton>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Main.MainActivity"
+    android:id="@+id/login_layout">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/background_mainpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Du lịch"
+                style="@style/DuLich"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Cà Mau"
+                style="@style/CaMau"
+                android:onClick="onClickBtnGoogle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnFacebook"
+                    style="@style/facebook_button"
+                    android:drawableStart="@drawable/facebook_button_icon"
+                    android:text="Facebook"
+                    android:onClick="onClickBtnGoogle"/>
+                <Button
+                    android:id="@+id/btnGoogle"
+                    style="@style/google_button"
+                    android:drawableLeft="@drawable/google_button_icon"
+                    android:text="Google"
+                    android:onClick="onClickBtnGoogle"/>
+
+            </LinearLayout>
+            <Button
+                android:onClick="onClickBtnGoogle"
+                android:id="@+id/btnSoDienThoai"
+                style="@style/smartphone_button"
+                android:drawableStart="@drawable/smartphone_button_icon"
+                android:drawablePadding="10px"
+                android:text="Số điện thoại"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

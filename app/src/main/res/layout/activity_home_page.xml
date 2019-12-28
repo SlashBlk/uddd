@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="56dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        style="@style/Widget.Design.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        android:elevation="10dp"
+        app:itemIconTint="@color/selector"
+        app:itemTextColor="@color/selector"
+        app:menu="@menu/navigations_items" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="70dp"
+        android:elevation="20dp"
+        android:onClick="btnAddClick"
+        android:src="@drawable/ic_add_black_24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:borderWidth="0dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/diaDanhInfoDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:transitionName="diaDanhInfoTrans">
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:padding="5dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/background_mainpage"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:scaleType="centerCrop"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/txtTenNguoiDung"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nguyễn Xuân Nhị">
+
+            </TextView>
+            <ImageButton
+                android:onClick="logOut"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_power_settings_new_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageButton>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
